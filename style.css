@@ -1,0 +1,48 @@
+body {
+
+    position: relative; 
+    top: 100px;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    color: darkgreen;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+p{
+    text-align: center;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#container{
+    display: flex;
+    justify-content: center; 
+    margin-top: 1.5cm;
+}
+
+button{
+    
+    color: darkgreen;
+    background-color: #e7fbd5;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 26px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    border-color: darkgreen;
+    transition-duration: 0.4s;
+    
+}
+
+button:hover {
+    
+    background-color: lightgreen;
+    color: darkgreen;
+}
