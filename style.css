@@ -1,8 +1,8 @@
-body {
+/* body {
 
     position: relative; 
     top: 100px;
-}
+} */
 
 h2 {
     font-size: 28px;
@@ -25,7 +25,7 @@ p{
     margin-top: 1.5cm;
 }
 
-button{
+.btn-group2{
     
     color: darkgreen;
     background-color: #e7fbd5;
@@ -36,13 +36,116 @@ button{
     font-size: 26px;
     margin: 4px 2px;
     border-radius: 12px;
+    border: thin solid;
     border-color: darkgreen;
     transition-duration: 0.4s;
     
 }
 
-button:hover {
+.btn-group2:hover {
     
     background-color: lightgreen;
     color: darkgreen;
+    cursor: pointer; 
+
+}
+
+
+ .btn-group {
+    width: 20%;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    /* grid-column-gap: 20px; */
+    /* grid-row-gap: 1px; */
+    justify-items: stretch;
+    align-items: inital; 
+}
+
+.btn-group1 {
+    color: darkgreen;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 26px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    border: thin solid;
+    border-color: darkgreen;
+    transition-duration: 0.4s;
+}
+
+.btn-group1:hover {
+ background-color: #3e8e41;
+ cursor: pointer; 
+ }
+ 
+/* 
+ emojies */
+ #really_happy::before {
+    content: "\01F604";
+  }
+
+  #happy::before {
+    content: "\01F60A";
+  }
+  
+  #content::before {
+    content: "\01F642";
+  }
+  
+  #ok::before {
+    content: "\01F610";
+  }
+
+  #depressed::before {
+    content: "\01F641"
+  }
+
+  .picker_options {
+    width: 35%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 1px; 
+    justify-items: stretch;
+    align-items: inital; 
+}
+
+  label:before {
+    content: url("https://cdn1.iconfinder.com/data/icons/windows8_icons_iconpharm/26/unchecked_checkbox.png");
+    position: absolute;
+    z-index: 100;
+    
+  }
+  :checked+label:before {
+    content: url("https://cdn1.iconfinder.com/data/icons/windows8_icons_iconpharm/26/checked_checkbox.png");
+  }
+  input[type=checkbox] {
+    display: none;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+    
+  }
+  label {
+    margin: 10px;
+    width: 150px;
+    height: 150x;
+    border-radius: 50%;
+    overflow: hidden;
+
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .circular_image img{
+    width:100%;
+  }
+
+#submit_choices{
+    align-items: center;
+
 }
